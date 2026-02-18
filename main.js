@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const generateBtn = document.getElementById('generate-btn');
     const numbersContainer = document.querySelector('.lotto-numbers');
+    const themeSwitch = document.getElementById('theme-switch');
+    const body = document.body;
 
     const generateUniqueNumbers = () => {
         const numbers = new Set();
@@ -25,6 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
     generateBtn.addEventListener('click', () => {
         const lottoNumbers = generateUniqueNumbers();
         displayNumbers(lottoNumbers);
+    });
+
+    themeSwitch.addEventListener('change', () => {
+        body.classList.toggle('light-mode');
     });
 
     // Initial generation
