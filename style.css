@@ -66,7 +66,7 @@ main {
     padding: 2rem 0;
 }
 
-.lotto-container, .contact-container, .giscus-container {
+.lotto-container, .contact-container {
     background-color: var(--container-color);
     padding: 3rem;
     border-radius: 20px;
@@ -226,7 +226,7 @@ footer {
         font-size: 2rem;
     }
 
-    .lotto-container, .contact-container, .giscus-container {
+    .lotto-container, .contact-container {
         padding: 2rem;
     }
 
