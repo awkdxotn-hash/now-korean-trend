@@ -18,10 +18,35 @@
 
     <main>
         <section>
-            <h2>문의하기</h2>
-            <p>서비스 이용 중 불편한 점이나 제안하고 싶은 사항이 있으시면 아래 이메일로 연락 주시기 바랍니다.</p>
-            <p>이메일: <strong>support@ktrendnow.example.com</strong></p>
-            <p>보통 영업일 기준 48시간 이내에 답변을 드리기 위해 최선을 다하고 있습니다.</p>
+            <h2>파트너십 및 서비스 문의</h2>
+            <p>K-Trend Now와 함께 성장할 파트너를 찾고 있습니다. 제휴 제안이나 서비스 관련 문의는 아래 폼을 통해 보내주세요.</p>
+            
+            <form action="https://formspree.io/f/mbdakrbd" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">성함 / 회사명</label>
+                    <input type="text" id="name" name="name" required placeholder="예: 홍길동 / (주)트렌드코리아">
+                </div>
+                <div class="form-group">
+                    <label for="email">답변받을 이메일</label>
+                    <input type="email" id="email" name="_replyto" required placeholder="example@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">문의 유형</label>
+                    <select id="subject" name="subject">
+                        <option value="partnership">비즈니스 파트너십</option>
+                        <option value="advertising">광고 게재 문의</option>
+                        <option value="feedback">서비스 개선 제안</option>
+                        <option value="other">기타 문의</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">문의 내용</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="상세 내용을 입력해주세요."></textarea>
+                </div>
+                <input type="hidden" name="_subject" value="K-Trend Now 새로운 문의 접수">
+                
+                <button type="submit" class="submit-btn">문의 보내기</button>
+            </form>
         </section>
     </main>
 
